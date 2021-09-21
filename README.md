@@ -1,0 +1,2 @@
+# ebookedit
+Standardebook projects
