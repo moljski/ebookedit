@@ -21,16 +21,52 @@ blockquote[epub|type~="z3998:letter"] {
   font-variant: small-caps;
 }
 
-.right {
+.dedication-year,
+.signature {
+  margin-bottom: 10px;
   text-align: right;
 }
 
-.left {
+.dedication-year {
+  margin-top: 50px;
+}
+
+.salutation {
   text-align: left;
 }
 
-.center {
+.pre-valediction {
   text-align: center;
+}
+
+.valediction {
+  text-indent: 51%;
+}
+
+span.i1 {
+  padding-left: 0.5em;
+  text-indent: -1em;
+}
+
+figure.full-page {
+  break-after: page;
+  break-before: page;
+  break-inside: avoid;
+  margin: 0;
+  max-height: 100vh;
+  text-align: center;
+}
+
+@supports (display: flex) {
+  figure.full-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  figure.full-page img {
+    height: 100vh;
+    object-fit: contain;
+  }
 }
 
 @supports (display: flex) {
